@@ -3,9 +3,9 @@ import string
 import json
 
 rules = {
-    "hello": ["Hello! How can I help you today?", "Hi there!", "Greetings!"],
-    "how are you": ["I'm doing fine, thanks!", "All good here!", "I'm ready to chat."],
-    "name": ["You can call me PythonBot.", "I'm your chatbot.", "I'm just Bot."],
+    "hello": ["Hello!", "Hi there!", "nice to meet you!"],
+    "how are you": ["I'm doing good, thanks!", "All good here!", "I'm ready to chat."],
+    "name": ["You can call me Bot.", "I'm your chatbot.", "I'm just Bot."],
     "weather": ["I can't check the weather, but I hope it's nice where you are."],
     "python": ["Python is a great language!", "I like Python too."],
     "thanks": ["You're welcome!", "No problem!", "Glad to help."],
@@ -17,7 +17,6 @@ try:
         extra = json.loads(f.read())
         rules.update(extra)
 except:
-    print("Could not load extra rules.")
     pass
 
 
